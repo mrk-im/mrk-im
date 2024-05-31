@@ -17,11 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const displayCommandResult = (command) => {
         if (command === 'about') {
+            outputElement.innerHTML = '';
             const aboutText = 'This is a simple terminal-style website created using HTML, CSS, and JavaScript.\nProject: https://github.com/mrk-im/mrk-im';
             const aboutElement = document.createElement('div');
             typeEffect(aboutElement, aboutText, () => {});
             outputElement.appendChild(aboutElement);
         } else if (command === 'contact') {
+            outputElement.innerHTML = '';
             const contactText = 'Contact Information:\nEmail: www@mrk.im\nGithub: https://github.com/mrk-im';
             const contactElement = document.createElement('div');
             typeEffect(contactElement, contactText, () => {});
@@ -29,10 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (command === 'clear') {
             outputElement.innerHTML = '';
         } else if (command === 'help') {
+            outputElement.innerHTML = '';
             const helpText = 'Available commands:\n- about: Display information about the website\n- contact: Display contact information\n- clear: Clear the terminal\n- help: Display this help message';
             const helpElement = document.createElement('div');
             typeEffect(helpElement, helpText, () => {});
-            outputElement.appendChild(helpElement);
+            outputElement.appendChild(helpElement); 
+        } else if (command === 'su root') {
+            const suText = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            const suElement = document.createElement('div');
+            typeEffect(suElement, suText, () => {});
+            outputElement.appendChild(suElement);
         } else {
             const errorText = `${command}: command not found`;
             const errorElement = document.createElement('div');
