@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
             typeEffect(helpElement, helpText, () => {});
             outputElement.appendChild(helpElement); 
         } else if (command === 'su root') {
+            outputElement.innerHTML = '';
             const suText = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
             const suElement = document.createElement('div');
             typeEffect(suElement, suText, () => {});
