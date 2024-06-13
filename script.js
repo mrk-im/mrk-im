@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
             outputElement.appendChild(suElement);
          } else if (command === 'shop') {
             outputElement.innerHTML = '';
-            const shopText = "nyancat.no - domain forsale.\n meow.no - domain forsale.\n qim.no - domain forsale.\n \n Please contact for pricing. domains@mrk.im";
+            const shopText = "nyancat.no - domain forsale.\nmeow.no - domain forsale.\nqim.no - domain forsale.\n \nPlease contact for pricing. domains@mrk.im";
             const shopElement = document.createElement('div');
             typeEffect(shopElement, shopText, () => {});
             outputElement.appendChild(shopElement);
