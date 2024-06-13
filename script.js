@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             outputElement.innerHTML = '';
         } else if (command === 'help') {
             outputElement.innerHTML = '';
-            const helpText = 'Available commands:\n- about: Display information about the website\n- contact: Display contact information\n- clear: Clear the terminal\n- help: Display this help message';
+            const helpText = 'Available commands:\n- about: Display information about the website\n- contact: Display contact information\n- clear: Clear the terminal\n- shop: Domains forsale\n- help: Display this help message';
             const helpElement = document.createElement('div');
             typeEffect(helpElement, helpText, () => {});
             outputElement.appendChild(helpElement); 
@@ -42,6 +42,12 @@ document.addEventListener('DOMContentLoaded', () => {
             const suElement = document.createElement('div');
             typeEffect(suElement, suText, () => {});
             outputElement.appendChild(suElement);
+         } else if (command === 'shop') {
+            outputElement.innerHTML = '';
+            const shopText = "nyancat.no - domain forsale.\n meow.no - domain forsale.\n qim.no - domain forsale.\n \n Please contact for pricing. domains@mrk.im";
+            const shopElement = document.createElement('div');
+            typeEffect(shopElement, shopText, () => {});
+            outputElement.appendChild(shopElement);
         } else {
             const errorText = `${command}: command not found`;
             const errorElement = document.createElement('div');
