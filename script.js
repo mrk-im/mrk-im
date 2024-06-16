@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             outputElement.appendChild(aboutElement);
         } else if (command === 'contact') {
             outputElement.innerHTML = '';
-            const contactText = 'Contact Information:\nEmail: www@mrk.im\nGithub: https://github.com/mrk-im';
+            const contactText = 'Contact Information:\nEmail: contact@mrk.im\nGithub: https://github.com/mrk-im\nYouTube: https://www.youtube.com/@mrk-im';
             const contactElement = document.createElement('div');
             typeEffect(contactElement, contactText, () => {});
             outputElement.appendChild(contactElement);
