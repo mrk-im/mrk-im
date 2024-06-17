@@ -60,7 +60,7 @@
   max-height: auto; 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   :root body #logo {
     width: 80vw; 
     height: auto; 
