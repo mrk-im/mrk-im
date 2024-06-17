@@ -7,7 +7,8 @@
   justify-content: center;
   align-items: center;
   position: relative; 
-  
+  overflow: hidden;
+  font-family: Monospace, Arial, Helvetica, sans-serif;
 }
 
 :root body #grid {
@@ -53,7 +54,7 @@
 }
 
 :root body #logo img {
-  width: 100%; 
+  width: 1000px; 
   height: auto; 
   max-width: 1000px; 
   max-height: auto; 
@@ -63,7 +64,7 @@
   :root body #logo {
     width: 80vw; 
     height: auto; 
-    max-width: 500px; 
+    max-width: 400px; 
     max-height: auto; 
   }
   
@@ -81,7 +82,6 @@
   margin-bottom: 5px;
   font-size: 14px;
   z-index: 10; 
-  font-family: Monospace, Arial, Helvetica, sans-serif;
   font-size: 10px;
 }
 
