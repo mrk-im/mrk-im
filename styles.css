@@ -62,7 +62,7 @@
 @media (max-width: 600px) {
   :root body #logo {
     width: 80vw; 
-    height: 50vw; 
+    height: auto; 
     max-width: 500px; 
     max-height: auto; 
   }
