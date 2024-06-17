@@ -39,7 +39,7 @@
 }
 
 :root body #grid .grid-item:hover {
-  opacity: 0;
+  opacity: 100;
 }
 
 :root body #logo {
