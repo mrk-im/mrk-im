@@ -61,10 +61,10 @@
 
 @media (max-width: 600px) {
   :root body #logo {
-    width: 80vw; 
-    height: 50vw; 
-    max-width: 400px; 
-    max-height: auto; 
+    width: 10vw; 
+    height: 10vw; 
+    max-width: 500px; 
+    max-height: 311px; 
   }
   
   :root body #logo img {
