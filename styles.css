@@ -69,29 +69,16 @@
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 10; 
-  width: 500px; 
-  height: 500px; 
-}
-
-:root body #logo img {
-  width: 1000px; 
-  height: auto; 
-  max-width: 1000px; 
-  max-height: auto; 
 }
 
 @media (max-width: 600px) {
   :root body #logo {
     width: 80vw; 
-    height: auto; 
+    height: 50vh; 
     max-width: 400px; 
-    max-height: auto; 
+    max-height: 500px; 
   }
   
-  :root body #logo img {
-    max-width: 400px; 
-    max-height: auto; 
-  }
 }
 
 :root body #footer {
