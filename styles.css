@@ -4,18 +4,19 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   position: relative; 
   overflow: hidden;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   color: #FFF;
-  touch-action: manipulation;
+  touch-action: manipulation; /* Prevents double-tap zooming */
 }
 
 :root h1 {
   font-family: monospace;
-  font-size: clamp(2rem, 5vw, 8rem);
+  font-size: clamp(2rem, 5vw, 8rem); /* Adjusted to fit better on small screens */
   color: #101010;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
@@ -36,6 +37,7 @@
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
   justify-content: center;
+  flex-grow: 1; /* Ensures the grid takes up available space */
 }
 
 :root body #grid .grid-item {
@@ -69,8 +71,8 @@
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 10; 
-  max-width: 80vw;
-  max-height: 80vh;
+  max-width: 80vw; /* Ensures the logo fits within the viewport */
+  max-height: 80vh; /* Ensures the logo fits within the viewport */
 }
 
 @media (max-width: 600px) {
@@ -83,7 +85,7 @@
 }
 
 :root body #footer {
-  position: absolute;
+  position: relative; /* Changed from absolute to relative */
   bottom: 0;
   right: 0;
   padding: 10px;
