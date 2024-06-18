@@ -15,7 +15,7 @@
 :root h1 {
   font-family: monospace;
   font-size: clamp(3rem, 10vw, 100rem);
-  color: #FFF;
+  color: #101010;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
