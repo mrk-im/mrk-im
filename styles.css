@@ -69,8 +69,8 @@
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 10; 
-  width: 1000px; 
-  height: auto; 
+  width: 500px; 
+  height: 500px; 
 }
 
 :root body #logo img {
