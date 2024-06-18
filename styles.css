@@ -10,18 +10,18 @@
   overflow: hidden;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   color: #FFF;
+  touch-action: manipulation;
 }
 
 :root h1 {
   font-family: monospace;
-  font-size: clamp(3rem, 10vw, 100rem);
+  font-size: clamp(2rem, 5vw, 8rem);
   color: #101010;
   padding: 0rem clamp(1rem, 2vw, 3rem);
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 :root h1:hover {
-  /*background-color: white;*/
   color: #FFF;
 }
 
@@ -69,18 +69,17 @@
   left: 50%; 
   transform: translate(-50%, -50%); 
   z-index: 10; 
-  width: 1000px; 
-  height: auto; 
+  max-width: 80vw;
+  max-height: 80vh;
 }
 
 @media (max-width: 600px) {
   :root body #logo {
-    width: 100vw; 
-    height: 100vh; 
-    max-width: 500px; 
-    max-height: auto; 
+    width: 80vw; 
+    height: auto; 
+    max-width: 80vw; 
+    max-height: 80vh; 
   }
-
 }
 
 :root body #footer {
