@@ -73,6 +73,16 @@
   height: auto; 
 }
 
+@media (max-width: 600px) {
+  :root body #logo {
+    width: 100vw; 
+    height: 100vh; 
+    max-width: 500px; 
+    max-height: auto; 
+  }
+
+}
+
 :root body #footer {
   position: absolute;
   bottom: 0;
