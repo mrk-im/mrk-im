@@ -10,6 +10,13 @@
   overflow: hidden;
   font-family: Monospace, Arial, Helvetica, sans-serif;
   color: #FFF;
+  position: fixed;
+}
+
+/* Also add styles for html to ensure complete scroll prevention */
+html {
+  overflow: hidden;
+  height: 100%;
 }
 
 :root h1 {
