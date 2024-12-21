@@ -18,8 +18,9 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
     });_defineProperty(this, "getGridSize",
 
     () => {
-      const columns = Math.floor(document.body.clientWidth / 50);
-      const rows = Math.floor(document.body.clientHeight / 50);
+      const minCellSize = window.innerWidth <= 480 ? 30 : 50;
+      const columns = Math.floor(document.body.clientWidth / minCellSize);
+      const rows = Math.floor(document.body.clientHeight / minCellSize);
 
       this.setState({ columns, rows, total: rows * columns });
       anime({
