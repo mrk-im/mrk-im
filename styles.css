@@ -1,106 +1,66 @@
 :root body {
-  background: #0A0A0A;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; 
-  overflow: hidden;
-  font-family: Monospace, Arial, Helvetica, sans-serif;
-  color: #FFF;
-  position: fixed;
-}
-
-/* Also add styles for html to ensure complete scroll prevention */
-html {
-  overflow: hidden;
-  height: 100%;
+    background: #080808;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-family: Monospace, Arial, Helvetica, sans-serif;
+    color: #FFF;
+    position: fixed;
 }
 
 :root h1 {
-  font-family: monospace;
-  font-size: clamp(3rem, 10vw, 100rem);
-  color: #161616;
-  padding: 0rem clamp(1rem, 2vw, 3rem);
-  border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    font-family: monospace;
+    font-size: clamp(3rem, 10vw, 100rem);
+    color: #e1dbd2;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
 :root h1:hover {
-  /*background-color: white;*/
-  color: #FFF;
+    color: #e1dbd2;
 }
 
 :root body a {
-  text-decoration: none;
-}
-
-:root body #grid {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
-  justify-content: center;
-}
-
-:root body #grid .grid-item {
-  min-width: 100%;
-  min-height: 100%;
-  background-color: #0A0A0A;
-  cursor: pointer;
-  position: relative;
-}
-
-:root body #grid .grid-item:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  outline: 0px solid black;
-  display: block;
-}
-
-:root body #grid .grid-item:hover {
-  opacity: 100;
+    text-decoration: none;
 }
 
 :root body #logo {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  top: 50%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  z-index: 10;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
-
-
 :root body #footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: 10px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  z-index: 10; 
-  font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    z-index: 10;
+    font-size: 10px;
 }
 
 :root body #footer a {
-  color: #FFFFFF;
-  text-decoration: none;
-  padding: 5px;
-  box-shadow: inset 0 0 0 0 white;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+    box-shadow: inset 0 0 0 0 white;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
 :root body #footer a:hover {
-  text-decoration: none;
-  box-shadow: inset 300px 0 0 0 white;
-  color: #0A0A0A;
+    text-decoration: none;
+    box-shadow: inset 300px 0 0 0 white;
+    color: #0A0A0A;
 }
+
