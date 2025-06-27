@@ -23,6 +23,7 @@
 		<form
 			action="https://formspree.io/f/meokvkyl"
 			method="POST"
+			onsubmit="return validateForm()"
 		>
 			<div class="form-group">
 				<label for="name">Name</label>
@@ -44,6 +45,30 @@
 			</div>
 		</form>
 	</div>
+	
+	<script>
+		function validateForm() {
+			const name = document.getElementById('name').value.trim();
+			const email = document.getElementById('email').value.trim();
+			const message = document.getElementById('message').value.trim();
+			
+			// Check if all fields are filled
+			if (!name || !email || !message) {
+				alert('Please fill in all fields.');
+				return false;
+			}
+			
+			// Check if email is valid
+			const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(email)) {
+				alert('Please enter a valid email address.');
+				return false;
+			}
+			
+			// If all validation passes, allow form submission
+			return true;
+		}
+	</script>
 	
 	<div id="footer"><a href="https://mrk.im">mrk.im</a> <a href="https://mrk.im/contact">contact</a> <a href="https://mrk.im/privacy">privacy</a></div>
 </body>
