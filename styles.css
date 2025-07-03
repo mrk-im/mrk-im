@@ -167,3 +167,32 @@
     scrollbar-color: #e1dbd2 #080808;
 }
 
+/* Mobile optimization - hide image on small screens */
+@media (max-width: 768px) {
+    #content {
+        align-items: flex-start !important;
+        padding-top: 2rem !important;
+        padding-bottom: 4rem !important;
+    }
+    
+    #content > div {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 1rem !important;
+        gap: 1.5rem !important;
+        align-items: center !important;
+    }
+    
+    #content img {
+        width: 80% !important;
+        max-width: 300px !important;
+        height: auto !important;
+        order: -1 !important; /* Move image to top */
+    }
+    
+    #content > div > div {
+        text-align: center !important;
+        color: #e1dbd2 !important;
+    }
+}
+
