@@ -31,6 +31,51 @@
 					Html, Css, JavaScript, Python, Linux, Discord, Cybersecurity, Servers, Blockchain, and more!</p>
 			</div>
 		</div>
+		<script>
+        // Configuration
+        const url = 'https://www.meow.no/feed'; // Replace with your URL
+        const fallbackMessage = '<h2>Alternative Content</h2><p>The embedded content is currently unavailable. Here\'s some backup information:</p><ul><li>Feature A description...</li><li>Feature B details...</li></ul>';
+
+        // Create iframe element
+        const loaderFrame = document.createElement('iframe');
+        loaderFrame.id = 'loader';
+        loaderFrame.className = 'content-container';
+
+        // Add to page
+        document.getElementById('content-container').appendChild(loaderFrame);
+
+        // Load content function
+        function loadContent() {
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) throw new Error();
+                    return response.text();
+                })
+                .then(html => {
+                    loaderFrame.contentDocument.write(html);
+                    loaderFrame.contentDocument.close();
+                })
+                .catch(() => {
+                    // Show fallback message
+                    document.getElementById('content-container').innerHTML = 
+                        '<div class="fallback-message">' + fallbackMessage + '</div>';
+                    
+                    // Optional: Add a reload button to the fallback message
+                    const reloadButton = `
+                        <button onclick="loadContent()" style="margin-top: 15px; padding: 8px 16px;">
+                            Reload Content (if available)
+                        </button>`;
+                    document.querySelector('.fallback-message').innerHTML += 
+                        '<p>Click <a href="#" onclick="this.parentNode.remove()">here</a> to reload the page.</p>' + reloadButton;
+                });
+        }
+
+        // Initial load
+        window.onload = loadContent;
+
+        // Periodic check (every 5 minutes)
+        setInterval(loadContent, 300000);
+    </script>
 	</div>
 	<div id="footer"><a href="https://mrk.im">mrk.im</a> <a href="https://mrk.im/contact">contact</a> <a href="https://mrk.im/privacy">privacy</a></div>
 
